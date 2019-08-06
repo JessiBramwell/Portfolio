@@ -139,6 +139,9 @@ nav a {
   font-family: 'Source Code Pro', monospace;
   text-transform: uppercase;
 }
+.portfolio-text-sub__links {
+  margin-top: 1rem;
+}
 .portfolio-text-sub h5,
 .portfolio-text-sub ul {
   margin: 0;
