@@ -6,37 +6,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/style/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="./assets/style/main.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/2ebf09dfd3.js"></script>
   <title>Jessica Bramwell</title>
 </head>
 
 <body>
-  <div>
+  <div id="color-block"></div>
+  <div class="nav-block">
     <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#portfolio">Portfolio</a>
+      <a class="scroll active" href="#about">About</a>
+      <a class="scroll" href="#skills">Skills</a>
+      <a class="scroll" href="#portfolio">Portfolio</a>
+
+      <div class="contact">
+        <a class="icon-title" data-toggle="collapse" data-target="#contact">
+          Contact
+          <i class="fas fa-chevron-right"></i>
+        </a>
+        <div id="contact" class="collapse contact-icons">
+          <a href="tel:+12066975733">
+            <i class="fas fa-phone"></i>
+            <span class="icon-title">Phone</span>
+          </a>
+          <a target="_blank">
+            <i class="fas fa-file"></i>
+            <span class="icon-title">Resume</span>
+          </a>
+          <a href="mailto:jessibramwell@gmail.com">
+            <i class="fas fa-envelope"></i>
+            <span class="icon-title">Email</span>
+          </a>
+        </div>
+
+      </div>
     </nav>
   </div>
-  <section id="about" class="wrapper scrollme container" data-color="gold">
-    <div id="color-block" class="animateme" data-when="exit" data-from=".1" data-to="1.6" data-easing="easeinout"
-      data-scalex="11" data-translatey="900"></div>
+
+  <section id="about" class="wrapper container">
 
     <div class="row">
-      <div class="header col-md-7 col-md-offset-3">
-        <div class="header-contact">
-          <h4 class="header-right">Salt Lake City, UT 84103</h4>
+      <div class="header col-lg-8 col-md-8 offset-md-3">
+        <div class="about-header">
+          <h4 class="header-right">Salt Lake City, UT</h4>
           <h1>Jessica Bramwell</h1>
           <div class="header-bottom">
-            <h4>(206)697-5733</h4>
-            <h4>bramibly@gmail.com</h4>
+            <h4></a> Full-stack Web Developer
+            </h4>
           </div>
         </div>
         <div class="header-paragraph">
+
           <p>
-            As a Web Developer with a strong background in customer service, the junction where technology meets human
+            I'm a Web Developer with a strong background in customer service. The junction where technology meets human
             concerns is
             my element. I gain the greatest satisfaction from using my unique knowledge and skills to find solutions for
             clients,
@@ -50,13 +74,14 @@
             my values stem from a mindset of human-centeredness.
           </p>
           <p>
-            Through the University of Utah’s Web Development Bootcamp, I’ve built a foundation in HTML & CSS,
+            Through the University of Utah’s Web Development Boot Camp, I’ve built a foundation in HTML & CSS,
             JavaScript, and
-            cutting edge JavaScript libraries and frameworks. I’m able to leverage those technical skills, along with my
+            cutting edge JavaScript libraries and frameworks. I’m now able to leverage those technical skills, along
+            with my
             dedication
             to attentive communication and diligent problem-solving, to translate problems into the kind of software and
             strategies
-            that not only work with and for people, but lead to tangible results.
+            that not only lead to tangible results but work with and for people.
           </p>
         </div>
 
@@ -64,240 +89,263 @@
     </div>
 
   </section>
+
   <div class="container">
-    <div id="portfolio">
+    <div id="skills">
 
-      <section data-color="burgundy">
-        <div class="row">
-          <div class="portfolio-item">
-            <div class="col-md-5 col-md-offset-2">
-              <div id="carousel-3" class="portfolio-img carousel slide" data-ride="carousel">
-
-                <ol class="carousel-indicators" style="display: none">
-                  <li data-target="#carousel-3" data-slide-to="0" class="active"></li>
-                  <li data-target="#carousel-3" data-slide-to="1"></li>
-                  <li data-target="#carousel-3" data-slide-to="2"></li>
-                </ol>
-
-                <div class="carousel-inner" role="listbox">
-                  <div class="item active">
-                    <img class="d-block w-100" src="assets/img/dsl-home.jpg" alt="First slide">
-                  </div>
-                  <div class="item">
-                    <img class="d-block w-100" src="assets/img/dsl-classes.jpg" alt="First slide">
-                  </div>
-                </div>
-
-                <a class="left carousel-control" href="#carousel-3" role="button" data-slide="prev">
-                  <i class="fas fa-chevron-left"></i>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#carousel-3" role="button" data-slide="next">
-                  <i class="fas fa-chevron-right"></i>
-                  <span class="sr-only">Next</span>
-                </a>
-              </div>
+      <section>
+        <div class="row wrapper">
+          <div class="col-lg-9 col-md-8 offset-md-3">
+            <div class="section-header">
+              <h2>Skills</h2>
             </div>
+            <div class="skills-lists">
 
-            <div class="portfolio-text col-md-5">
-
-              <div class="portfolio-text-upper">
-                <p>Find and post classes, performances, and audtions.</p>
-              </div>
-
-              <div class="portfolio-text-title">
-                <h4> - For dance communities</h4>
-                <h3>Dance Salt Lake</h3>
-              </div>
-
-              <div class="portfolio-text-sub">
-                <h5>Built with:</h5>
-                <ul>
-                  <li>React</li>
-                  <li>Nodejs</li>
-                  <li>Express</li>
-                  <li>Sequelize</li>
-                  <li>Bootstrap</li>
+              <div class="skills-list col-lg-6 col-md-12">
+                <h4 data-target="#skills-list_1">
+                  Foundational Skillset
+                  <span class="chevron"><i class="fas fa-chevron-right"></i></span>
+                </h4>
+                <ul id="skills-list_1" class="skills-list_ul show">
+                  <li>HTML & CSS</li>
+                  <li>JavaScript</li>
+                  <li>JQuery</li>
+                  <li>Node.js</li>
+                  <li>React.js</li>
                 </ul>
-                <div class="portfolio-text-sub__links">
-                  <a target="_blank" href="https://hidden-tundra-60023.herokuapp.com/">Live Site</a> -
-                  <a target="_blank" href="https://github.com/dansirdan/dance-salt-lake">Github</a>
-                </div>
               </div>
 
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section data-color="green">
-        <div class="row">
-          <div class="portfolio-item">
-            <div class="col-md-5 col-md-offset-2">
-              <div id="carousel-1" class="carousel slide" data-ride="carousel">
-
-                <ol class="carousel-indicators" style="display: none">
-                  <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
-                  <li data-target="#carousel-1" data-slide-to="1"></li>
-                  <li data-target="#carousel-1" data-slide-to="2"></li>
-                </ol>
-
-                <div class="carousel-inner portfolio-img" role="listbox">
-                  <div class="item active">
-                    <img class="d-block w-100" src="./assets/img/hikeit-login.jpg" alt="First slide">
-                  </div>
-                  <div class="item">
-                    <img class="d-block w-100" src="./assets/img/hikeit-register.jpg" alt="First slide">
-                  </div>
-                </div>
-
-                <a class="left carousel-control" href="#carousel-1" role="button" data-slide="prev">
-                  <i class="fas fa-chevron-left"></i>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#carousel-1" role="button" data-slide="next">
-                  <i class="fas fa-chevron-right"></i>
-                  <span class="sr-only">Next</span>
-                </a>
-              </div>
-            </div>
-
-            <div class="portfolio-text col-md-5">
-
-              <div class="portfolio-text-upper">
-                <p>Search Utah hikes and save them to your favorites list.</p>
-              </div>
-
-              <div class="portfolio-text-title">
-                <h4> - A hike planner</h4>
-                <h3>Hikeit</h3>
-              </div>
-
-              <div class="portfolio-text-sub">
-                <h5>Built with:</h5>
-                <ul>
-                  <li>Firebase Authentication</li>
-                  <li>Firebase Realtime database</li>
-                  <li>The Hiking Project API</li>
-                  <li>Materialize</li>
+              <div class="skills-list col-lg-6 col-md-12">
+                <h4 data-target="#skills-list_2">
+                  Database and ORM Experience
+                  <span class="chevron"><i class="fas fa-chevron-right"></i></span>
+                </h4>
+                <ul id="skills-list_2" class="skills-list_ul show">
+                  <li>SQL
+                    <ul>
+                      <li>MySQL</li>
+                      <li>Sequelize</li>
+                    </ul>
+                  </li>
+                  <li>NoSQL
+                    <ul>
+                      <li>Firebase</li>
+                      <li>Mongo</li>
+                      <li>Mongoose</li>
+                    </ul>
+                  </li>
                 </ul>
-                <div class="portfolio-text-sub__links">
-                  <a target="_blank" href="https://dansirdan.github.io/hike-it/">Live Site</a> -
-                  <a target="_blank" href="https://github.com/dansirdan/hike-it">Github</a>
-                </div>
               </div>
 
-            </div>
-
-          </div>
-
-        </div>
-      </section>
-
-      <section data-color="blue">
-        <div class="row">
-          <div class="portfolio-item">
-            <div class="col-md-5 col-md-offset-2">
-              <div id="carousel-2" class="portfolio-img carousel slide" data-ride="carousel">
-
-                <ol class="carousel-indicators" style="display: none">
-                  <li data-target="#carousel-2" data-slide-to="0" class="active"></li>
-                  <li data-target="#carousel-2" data-slide-to="1"></li>
-                  <li data-target="#carousel-2" data-slide-to="2"></li>
-                </ol>
-
-                <div class="carousel-inner" role="listbox">
-                  <div class="item active">
-                    <img class="d-block w-100" src="./assets/img/balanced-ryg.jpg" alt="First slide">
-                  </div>
-                  <div class="item">
-                    <img class="d-block w-100" src="./assets/img/balanced-rgy.jpg" alt="First slide">
-                  </div>
-                  <div class="item">
-                    <img class="d-block w-100" src="./assets/img/balanced-rgg.jpg" alt="First slide">
-                  </div>
-                  <div class="item">
-                    <img class="d-block w-100" src="./assets/img/balanced-side.jpg" alt="First slide">
-                  </div>
-                </div>
-
-                <a class="left carousel-control" href="#carousel-2" role="button" data-slide="prev">
-                  <i class="fas fa-chevron-left"></i>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#carousel-2" role="button" data-slide="next">
-                  <i class="fas fa-chevron-right"></i>
-                  <span class="sr-only">Next</span>
-                </a>
-              </div>
-            </div>
-
-            <div class="portfolio-text col-md-5">
-              <div class="portfolio-text-upper">
-                <p>Find balance in your todos with colorful visual feedback.</p>
-              </div>
-
-              <div class="portfolio-text-title">
-                <h4> - A life balance app</h4>
-                <h3>Balanced</h3>
-              </div>
-
-              <div class="portfolio-text-sub">
-                <h5>Built with:</h5>
-                <ul>
-                  <li>Nodejs</li>
-                  <li>Express</li>
+              <div class="skills-list col-lg-6 col-md-12">
+                <h4 data-target="#skills-list_3">
+                  Templating and Front-End Frameworks
+                  <span class="chevron"><i class="fas fa-chevron-right"></i></span>
+                </h4>
+                <ul id="skills-list_3" class="skills-list_ul">
                   <li>Handlebars</li>
-                  <li>Passport</li>
-                  <li>Express Sessions</li>
+                  <li>Bootstrap</li>
                   <li>Materialize</li>
                 </ul>
-                <div class="portfolio-text-sub__links">
-                  <a target="_blank" href="https://floating-peak-89496.herokuapp.com/signin">Live Site</a> -
-                  <a target="_blank" href="https://github.com/tubidge/Project-2">Github</a>
-                </div>
               </div>
+
+              <div class="skills-list col-lg-6 col-md-12">
+                <h4 data-target="#skills-list_4">
+                  Version Control and Testing
+                  <span class="chevron"><i class="fas fa-chevron-right"></i></span>
+                </h4>
+                <ul id="skills-list_4" class="skills-list_ul">
+                  <li>Git & GitHub</li>
+                  <li>Travis</li>
+                  <li>Mocha</li>
+                  <li>Chai</li>
+                </ul>
+              </div>
+
+              <div class="skills-list col-lg-6 col-md-12">
+                <h4 data-target="#skills-list_5">
+                  Routing
+                  <span class="chevron"><i class="fas fa-chevron-right"></i></span>
+                </h4>
+                <ul id="skills-list_5" class="skills-list_ul">
+                  <li>Express</li>
+                </ul>
+              </div>
+
             </div>
           </div>
-
         </div>
       </section>
-
 
     </div>
-    <!-- end of portfolio -->
-    <!-- <div id="skills">
-      <section id="gold">
+    <div id="portfolio">
+      <section>
         <div class="row">
-          <div class="skills col-md-8 col-md-offset-3">
+          <div class="col-lg-9 col-md-8 offset-md-3">
 
-            <div class="col-md-6">
-              <div class="skills-text-upper">
-
-              </div>
-              <div class="skills-text-title">
-                <h3>Skills</h3>
-              </div>
+            <div class="section-header">
+              <h2>Portfolio</h2>
             </div>
 
-            <div class="col-md-6 skills-block">
+            <!-- first item start -->
+            <div class="portfolio-item row">
+
+              <div class="col-lg-5 col-md-12">
+                <div class="portfolio-img">
+                  <img class="d-block w-100" src="assets/img/dsl-home.jpg" alt="First slide">
+                </div>
+                <div class="portfolio-img portfolio-img__second">
+                  <img class="d-block w-100" src="assets/img/dsl-classes.jpg" alt="First slide">
+                </div>
+              </div>
+
+              <div class="portfolio-text col-lg-7 col-md-12">
+
+                <div class="portfolio-text-upper">
+                  <p>Find and post classes, performances, and auditions.</p>
+                </div>
+
+                <div class="portfolio-text-title">
+                  <h4> - For dance communities</h4>
+                  <h3>Dance Salt Lake</h3>
+                </div>
+
+                <div class="portfolio-text-sub">
+                  <h5>Built with:</h5>
+                  <ul>
+                    <li>React</li>
+                    <li>Nodejs</li>
+                    <li>Express</li>
+                    <li>Sequelize</li>
+                    <li>Bootstrap</li>
+                  </ul>
+                  <div class="portfolio-text-sub__links">
+                    <a target="_blank" href="https://dance-salt-lake.herokuapp.com/">Live Site</a> -
+                    <a target="_blank" href="https://github.com/dansirdan/dance-salt-lake">Github</a>
+                  </div>
+                </div>
+
+              </div>
 
             </div>
+            <!-- first item end -->
+
+            <!-- second item start -->
+            <div class="portfolio-item row">
+
+              <div class="col-lg-5">
+                <div class="portfolio-img">
+                  <img class="d-block w-100" src="./assets/img/hikeit-login.jpg" alt="First slide">
+                </div>
+                <div class="portfolio-img portfolio-img__second">
+                  <img class="d-block w-100" src="./assets/img/hikeit-register.jpg" alt="First slide">
+                </div>
+              </div>
+
+              <div class="portfolio-text col-lg-7">
+
+                <div class="portfolio-text-upper">
+                  <p>Search Utah hikes and save them to your favorites list.</p>
+                </div>
+
+                <div class="portfolio-text-title">
+                  <h4> - A hike planner</h4>
+                  <h3>Hikeit</h3>
+                </div>
+
+                <div class="portfolio-text-sub">
+                  <h5>Built with:</h5>
+                  <ul>
+                    <li>Firebase Authentication</li>
+                    <li>Firebase Realtime database</li>
+                    <li>The Hiking Project API</li>
+                    <li>Materialize</li>
+                  </ul>
+                  <div class="portfolio-text-sub__links">
+                    <a target="_blank" href="https://dansirdan.github.io/hike-it/">Live Site</a> -
+                    <a target="_blank" href="https://github.com/dansirdan/hike-it">Github</a>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+            <!-- second item end -->
+
+            <!-- third item start -->
+            <div class="portfolio-item row">
+
+              <div class="col-lg-5">
+                <div class="portfolio-img">
+                  <img class="d-block w-100" src="./assets/img/balanced-rgy.jpg" alt="First slide">
+                </div>
+                <div class="portfolio-img portfolio-img__second">
+                  <img class="d-block w-100" src="./assets/img/balanced-side.jpg" alt="First slide">
+                </div>
+              </div>
+
+              <div class="portfolio-text col-lg-7">
+                <div class="portfolio-text-upper">
+                  <p>Find balance in your todos with colorful visual feedback.</p>
+                </div>
+
+                <div class="portfolio-text-title">
+                  <h4> - A life balance app</h4>
+                  <h3>Balanced</h3>
+                </div>
+
+                <div class="portfolio-text-sub">
+                  <h5>Built with:</h5>
+                  <ul>
+                    <li>Nodejs</li>
+                    <li>Express</li>
+                    <li>Handlebars</li>
+                    <li>Passport</li>
+                    <li>Express Sessions</li>
+                    <li>Materialize</li>
+                  </ul>
+                  <div class="portfolio-text-sub__links">
+                    <a target="_blank" href="https://floating-peak-89496.herokuapp.com/signin">Live Site</a> -
+                    <a target="_blank" href="https://github.com/tubidge/Project-2">Github</a>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+            <!-- third item end -->
 
           </div>
         </div>
-
       </section>
-    </div> -->
+      <section>
+        <div class="row wrapper cheers">
+          <div class="col-lg-8 offset-md-3">
+            <div class="section-header">
+              <h2>Thank you<span> for viewing</span></h2>
+            </div>
+            <h4>Find more Here: <a target="_blank" href="https://github.com/JessiBramwell">Github</a></h4>
+            <h4>Reach out: <a href="mailto:jessibramwell@gmail.com">Email</a></h4>
+
+          </div>
+        </div>
+      </section>
+
+    </div>
 
   </div>
 
 
 
-  <script src="https://code.jquery.com/jquery-3.4.0.min.js"
-    integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
-  <script src="./assets/js/bootstrap.min.js" type="text/javascript"></script>
-  <script src="./assets/js/jquery.scrollme.js" type="text/javascript"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
   <script src="./assets/js/main.js" type="text/javascript"></script>
 </body>
 
